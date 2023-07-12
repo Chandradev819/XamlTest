@@ -5,16 +5,17 @@
 
 <h1>Weather forecast</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
-
-<XamlForBlazor.XamlElement Type="@typeof(XamlTest.Xaml.Counter.CounterControl)" />
-
 @if (forecasts == null)
 {
     <p><em>Loading...</em></p>
 }
 else
 {
+    <XamlForBlazor.XamlElement Type="@typeof(System.Windows.Controls.DataGrid)" 
+    ItemsSource="@forecasts"
+    IsReadOnly="True"
+    />
+
     <table class="table">
         <thead>
             <tr>

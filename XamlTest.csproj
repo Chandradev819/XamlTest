@@ -9,6 +9,8 @@
   <ItemGroup>
     <None Remove="UserControl1.xaml" />
     <None Remove="Xaml\Counter\CounterControl.xaml" />
+    <None Remove="Xaml\Timer\TimerControl.xaml" />
+    <None Remove="Xaml\WeatherForeCast\WeatherForecastControl.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +29,26 @@
 
   <ItemGroup>
     <Content Include="Xaml\Counter\CounterControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Xaml\WeatherForeCast\WeatherForecastControl.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Xaml\WeatherForeCast\WeatherForecastControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Xaml\Timer\TimerControl.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Xaml\Timer\TimerControl.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
   </ItemGroup>
